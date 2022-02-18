@@ -4,31 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Formulario.css" media="screen">
     <title>Formulario</title>
 </head>
 <body>
     <div>
-        <h1>Cadrastro dev's</h1>
-        <p>Complete com as suas informações </p>
+        <h1 id="titulo"><strong>Cadrastro dev's</strong></h1>
+        <p id="subtitulo">Complete com as suas informações </p>
     </div>
 
     <form>
-        <fieldset>
-            <div>
-                <label><strong>Nome</strong></label>
-                <input type="text" name="nome" id="name">
+        <fieldset class="area-1º">
+            <div class="sub-1º">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="name" required>
             </div>
 
-            <div>
-                <label><strong>Sobrenome</strong></label>
-                <input type="text" name="Sobrenome" id="Sobrenome">
+            <div class="sub-1º">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
             </div>
         </fieldset>
+    <div class="sub-1º">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" required>
 
-        <label><strong>Email</strong></label>
-        <input type="email" name="email" id="email">
-
-        <div>
+    </div>
+        <div class="sub-1º">
             <label><strong>De qual área do desenvolvimento você é ?</strong></label>
 
             <label>
@@ -44,7 +46,7 @@
             </label>
         </div>
 
-        <div>
+        <div class="sub-1º">
             <label for="senioridade"><strong>Senioridade</strong></label>
             <select id="senioridade">
                 <option value="" disabled selected>Selecione</option>
@@ -54,8 +56,8 @@
             </select>
         </div>
 
-        <fieldset>
-            <div>
+        <fieldset class="area-1º">
+            <div id="list">
                 <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                 <label for="tecnologia1"> HTML</label>
@@ -74,14 +76,14 @@
             </div>
         </fieldset>
 
-        <div>
+        <div class="sub-1º">
             <label><strong>Fale um pouco sobre você</strong></label>
             <textarea rows="4" style="width: 60em;" id="esperiencia" name="experiencia"></textarea>
         </div>
 
-        <div>
+        <div class="button">
             <button type="submit" onsubmit="">Concluído</button>
         </div>
     </form>
 </body>
-</html>
+</html
